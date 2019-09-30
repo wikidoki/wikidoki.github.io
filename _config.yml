@@ -1,6 +1,63 @@
-title: Minimal theme
-logo: /assets/img/logo.png
-description: Minimal is a theme for GitHub Pages.
-show_downloads: true
-google_analytics:
-remote_theme: pages-themes/minimal
+# Jekyll configuration
+markdown: kramdown
+highlighter: rouge
+
+paginate: 10
+
+language: 'ko-kr'
+
+url: https://wikidoki.github.io
+
+baseurl: /
+
+title: 위키도키 Github
+
+description: 
+
+cover: #png
+
+logo:
+logo_dark:
+
+favicon: 
+
+production_url: https://wikidoki.github.io/
+
+source_url: https://github.com/wikidoki/wikidoki.github.io/
+
+navigation: True
+
+disqus: True
+disqus_shortname: wikidoki
+
+
+google_analytics:  # replace with your GA tracking identifier
+
+permalink: /:title
+
+plugins: [jekyll-paginate, jekyll-feed, jekyll-gist]
+
+feed:
+  path: feed.xml
+
+safe: False
+lsi: False
+
+username: wikidoki
+repo: wikidoki.github.io
+
+branch: master
+
+relative_source: 
+
+destination: ./output/
+exclude:
+  - README.md
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
+  - changelog.md
+  - "*.Rmd"
+  - vendor
+  - .travis.yml
+  - node_modules
